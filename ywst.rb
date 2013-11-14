@@ -26,7 +26,7 @@ salt = "a"
 cipher.key = OpenSSL::PKCS5.pbkdf2_hmac_sha1(password, salt, 2000, 256) #generate sha256 key from password
 iv = cipher.random_iv
 cipher.iv = iv
-complete_statement = " START: " + time_start.to_s + " META: " + statement_metadata + " TEXT: " + statement_text + " END: " + time_end.to_s
+complete_statement = "START: " + time_start.to_s + "META: " + statement_metadata + "TEXT: " + statement_text + "END: " + time_end.to_s
 puts complete_statement
 encrypted_statement = cipher.update(complete_statement) + cipher.final
 puts "Encrypted statement:"
