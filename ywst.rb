@@ -4,7 +4,6 @@
 
 #Dependencies
 require 'openssl'
-require 'encryptor'
 
 #user input
 time_start = Time.now

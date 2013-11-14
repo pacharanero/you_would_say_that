@@ -1,0 +1,15 @@
+<h1>Listing statements</h1>
+ 
+<table>
+  <tr>
+    <th>Metadata</th>
+    <th>Body</th>
+  </tr>
+ 
+  <% @statements.each do |statement| %>
+    <tr>
+      <td><%= statement.statement_metadata %></td>
+      <td><%= statement.statement_body %></td>
+    </tr>
+  <% end %>
+</table>
