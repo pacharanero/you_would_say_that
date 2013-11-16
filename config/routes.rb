@@ -1,4 +1,11 @@
 YouWouldSayThat::Application.routes.draw do
+  get "users/index"
+  get "users/create"
+  get "users/new"
+  get "users/edit"
+  get "users/update"
+  get "users/show"
+  get "users/destroy"
   devise_for :users
   get "statements/index"
   # The priority is based upon order of creation: first created -> highest priority.
