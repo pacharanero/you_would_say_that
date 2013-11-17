@@ -3,4 +3,4 @@ save start and end datetime stamps
 create digest, display and save to database
 view statements in encrypted form
 button to decrypt
-
+attempts at adding file upload support with https://github.com/carrierwaveuploader/carrierwave
