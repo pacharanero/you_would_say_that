@@ -1,8 +1,24 @@
 == README
 
-ywst.rb is a quick & dirty proof-of-concept script that demonstrates the encryption, hashing, and decryption of a timestamped block of text and a bit of metadata
+* ywst.rb is a quick & dirty proof-of-concept script that demonstrates the encryption, hashing, and decryption of a timestamped block of text and a bit of metadata
 
-YouWouldSayThat is a Rails4 app building this idea into a more sophisticated webapp
+* YouWouldSayThat is a Rails4 app building this idea into a more sophisticated webapp, including user management and statement encryption and digest chaining.
+
+==ROADMAP
+
+=Code will be open source, free to set up personal server etc
+
+=Also offer SaaS which will be funding/business model
+
+=Basic/Free account:
+* text statements, limited numbers per month
+
+=Premium/Paid account:
+* unlimited text statements
+* photo upload
+* audio upload
+* video upload
+* email confirmation of an upload and email alert of edits
 
 
 
