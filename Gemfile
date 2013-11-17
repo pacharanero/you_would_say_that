@@ -54,3 +54,6 @@ end
 
 #Devise for secure user auth
 gem 'devise'
+
+#Carrierwave for file uploading
+gem 'carrierwave'
