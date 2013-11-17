@@ -37,6 +37,8 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
     <div class="navbar navbar-fluid-top">
       <div class="navbar-inner">
@@ -49,6 +51,8 @@
           <a class="brand" href="/">YouWouldSayThat</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
+              <li><%= link_to "Login", "/path1"  %></li>
+              <li><%= link_to "Register", "/path2"  %></li>
               <li><%= link_to "Add Statement", "/statements/new"  %></li>
               <li><%= link_to "Show Statements", "/statements"  %></li>
             </ul>
@@ -75,7 +79,7 @@
       </div><!--/row-->
 
       <footer>
-        <p>&copy; You Would Say That</p>
+        <p>&copy; YouWouldSayThat 2013</p>
       </footer>
 
     </div> <!-- /container -->
