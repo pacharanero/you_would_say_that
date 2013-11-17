@@ -13,7 +13,7 @@ YouWouldSayThat::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   resources :statements
-  resources :users
+  devise_for :users
 
   # Example resource route with options:
   #   resources :products do
