@@ -1,8 +1,44 @@
-== README
+== YouWouldSayThat
+===Secure Provable Statements for Professionals
 
-ywst.rb is a quick & dirty proof-of-concept script that demonstrates the encryption, hashing, and decryption of a timestamped block of text and a bit of metadata
+During a professional's working life, situations occur which require the professional to make contemporaneous a note or statement in order to be able to defend their actions later. Currently there is no user-friendly way to achieve this, without running into problems with data security, backups, provenancing, and (in the UK) the Data Protection Act.
 
-YouWouldSayThat is a Rails4 app building this idea into a more sophisticated webapp
+In the UK, keeping an electronic record with identifiable details about people in it (clients, patients, colleagues...) necessitates registration as a Data Controller with the ICO. If identifiable, the data is kept _illegally_ unless registered with the ICO. YWST would take care of this issue for its users by being registered with the ICO on their behalf. 
+
+Storing the data in a single location such as a home PC incurs significant risk of total loss of data if there is a problem with your home computer. Backups can reduce this but not *all* professionals have a backup arrangement in place that would be regarded as a robust, reliable, and secure.
+
+Unfamiliarity with strong encryption tools means most professionals would not be able to encrypt the data before saving.
+
+Cloud storage arrangements such as Dropbox, Google Drive, etc bring in even more issues of data governance because the user does not know where there data is located physically.
+
+Above all, none of these methods provide any way to PROVE the data and time that the data was recorded. It's easy to change file properties, Word timestamps, email headers. YWST solves this problem in an elegant and unique way by producing SHA256 message digest of all entries and then both publishing these digests openly (so they are a matter of public record), and chaining the digests together, meaning it would be impossible to amend an entry done, say - 2 years ago, without having to re-calculate the digests of all the subsequent notes (which you do not have access to the full text of, only the resulting hash). Even if this were achieved, the newly-created digest chain would differ from the publicly available one, making any such amendments completely obvious.
+
+A note or statement presented in court without such provability behind it, could be called into question easily: 
+
+BARRISTER: Well, <em>you would say that</em> wouldn't you? This statement could have been written yesterday!
+
+
+==Files
+
+* ywst.rb is a quick & dirty proof-of-concept script that demonstrates the encryption, hashing, and decryption of a timestamped block of text and a bit of metadata
+
+* YouWouldSayThat is a Rails4 app building this idea into a more sophisticated webapp, including user management and statement encryption and digest chaining.
+
+==ROADMAP
+
+===Code will be open source, free to set up personal server etc
+
+===Also offer SaaS which will be funding/business model
+
+====Basic/Free account:
+* text statements, limited numbers per month
+
+====Premium/Paid account:
+* unlimited text statements
+* photo upload
+* audio upload
+* video upload
+* email confirmation of an upload and email alert of edits
 
 
 
