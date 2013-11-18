@@ -1,8 +1,11 @@
-== YouWouldSayThat - Secure Provable Statements for Professionals
+== YouWouldSayThat
+===Secure Provable Statements for Professionals
 
 During a professional's working life, situations occur which require the professional to make contemporaneous a note or statement in order to be able to defend their actions later. Currently there is no user-friendly way to achieve this, without running into problems with data security, backups, provenancing, and (in the UK) the Data Protection Act.
 
 In the UK, keeping an electronic record with identifiable details about people in it (clients, patients, colleagues...) necessitates registration as a Data Controller with the ICO.
+
+==Files
 
 * ywst.rb is a quick & dirty proof-of-concept script that demonstrates the encryption, hashing, and decryption of a timestamped block of text and a bit of metadata
 
