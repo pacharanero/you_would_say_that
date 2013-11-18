@@ -15,7 +15,7 @@ Above all, none of these methods provide any way to PROVE the data and time that
 
 A note or statement presented in court without such provability behind it, could be called into question easily: 
 
-BARRISTER: Well, _you would say that_, wouldn't you? This statement could have been written yesterday!
+BARRISTER: Well, _you would say that_ wouldn't you? This statement could have been written yesterday!
 
 
 ==Files
